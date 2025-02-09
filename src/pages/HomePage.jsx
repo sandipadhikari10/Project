@@ -5,9 +5,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import backimg2 from "../assets/bg2.png";
-import backimg1 from "../assets/bg1.png";
+import backimg2 from "../assets/members/bg2.png";
+import backimg1 from "../assets/members/bg1.png";
 import hari from "../assets/gallery/hari.jpg";
+import CalendarComponent from "./CalendarComponent";
+import ExecutiveBoard from "./Dropdowns/ExecutiveBoard";
+
 // import { Button } from "@/components/ui/button";
 
 const HomePage = () => {
@@ -30,7 +33,7 @@ const HomePage = () => {
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
-                className="min-w-full h-125 object-cover  rounded shadow-md"
+                className="min-w-full h-125 object-cover rounded shadow-md"
               />
             </SwiperSlide>
           ))}
@@ -162,6 +165,25 @@ const HomePage = () => {
             <p>President, NRNA California Chapter</p>
           </div>
         </div>
+      </div>
+
+      <div className="mt-25 bg-gray-100 grid   md:grid-cols-2  ">
+        {/* <div className="bg-gray-100 min-h-screen flex item-center content-between justify-center gap-10"> */}
+        <div className="ml-20  p-20">
+          <h1 className="font-[vollkorn] text-4xl w-full font-bold text-[#3a3b3b]">
+            Events This Month
+          </h1>
+          <CalendarComponent />
+        </div>
+        <div className=" mt-49 ">
+          <h1 className="font-[vollkorn] text-4xl  font-bold text-[#3a3b3b]">
+            Past Events
+          </h1>
+        </div>
+      </div>
+      <div>
+        <ExecutiveBoard />
+        <button className="">View All Members</button>
       </div>
     </div>
   );

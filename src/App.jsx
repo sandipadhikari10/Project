@@ -4,6 +4,12 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
+import ExecutiveBoard from "./pages/Dropdowns/ExecutiveBoard";
+import News from "./pages/News";
+import Advisors from "./pages/Dropdowns/Advisors";
+import GeneralMember from "./pages/Dropdowns/GeneralMember";
+import PastPresident from "./pages/Dropdowns/PastPresident";
+import WestCoast from "./pages/Dropdowns/WestCoast";
 
 function App() {
   return (
@@ -13,6 +19,12 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/Executive-Board" element={<ExecutiveBoard />} />
+        <Route path="/Advisors" element={<Advisors />} />
+        <Route path="/General-Members" element={<GeneralMember />} />
+        <Route path="/Past-President" element={<PastPresident />} />
+        <Route path="/RCC-West-Coast-Region" element={<WestCoast />} />
       </Routes>
       <Footer />
     </>
