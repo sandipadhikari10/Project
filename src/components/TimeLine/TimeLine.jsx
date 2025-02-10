@@ -1,54 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-const executiveData = {
-  "2023-2025": [
-    { sn: 1, name: "Amit Kumar", designation: "Chapter President" },
-    { sn: 2, name: "Rajesh Sharma", designation: "Chapter Vice President" },
-    { sn: 3, name: "Priya Singh", designation: "Chapter Treasurer" },
-    { sn: 4, name: "Neha Verma", designation: "Chapter Secretary" },
-  ],
-  "2021-2023": [
-    { sn: 1, name: "Ram Thapa", designation: "Chapter President" },
-    { sn: 2, name: "Jane Smith", designation: "Chapter Vice President" },
-    { sn: 3, name: "Michael Johnson", designation: "Chapter Treasurer" },
-    { sn: 4, name: "Emily White", designation: "Chapter Secretary" },
-  ],
-
-  "2019-2021": [
-    { sn: 1, name: "Surendra P Malla", designation: "Chapter President" },
-    {
-      sn: 2,
-      name: "Karna Bahadur Chand",
-      designation: "Chapter Vice President",
-    },
-    {
-      sn: 3,
-      name: "Shamsher (Subash) Bhandari",
-      designation: "Chapter Treasurer",
-    },
-    { sn: 4, name: "Madan Maharjan", designation: "Chapter Secretary" },
-    { sn: 5, name: "Devrarn Oli", designation: "Chapter Joint-Secretary" },
-    {
-      sn: 6,
-      name: "Amrita Sapkota Gaire",
-      designation: "Chapter Women Coordinator",
-    },
-    {
-      sn: 7,
-      name: "Tej (Binod) Poudel",
-      designation: "Chapter Youth Coordinator",
-    },
-    {
-      sn: 8,
-      name: "Padam Thokar Lama Tamang",
-      designation: "Chapter Board Member 1",
-    },
-    { sn: 9, name: "Shanti Poudyal", designation: "Chapter Board Member 2" },
-    { sn: 10, name: "Robin Pathak", designation: "Chapter Board Member 3" },
-    { sn: 11, name: "Madan Raj Pathak", designation: "Chapter Board Member 4" },
-  ],
-};
+import executiveData from "./TimeLineData";
 
 const TimeLine = () => {
   const [selectedYear, setSelectedYear] = useState("2023-2025");
@@ -56,14 +8,14 @@ const TimeLine = () => {
     <div>
       <div className="max-w-6xl mx-auto mt-20  p-5 mb-20">
         {/* Timeline Navigation with Framer Motion */}
-        <div className="relative flex justify-center items-center space-x-40 mb-15">
+        <div className="relative flex justify-center items-center  space-x-40 mb-15">
           <div className="absolute top-9 w-100% h-2  bg-gray-300"></div>
           {Object.keys(executiveData).map((year) => (
             <div key={year} className="relative">
               <motion.button
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.1 }}
-                className={`relative text-lg font-semibold transition ${
+                className={`relative text-lg font-semibold cursor-pointer transition ${
                   selectedYear === year ? "text-black" : "text-gray-500"
                 }`}
                 onClick={() => setSelectedYear(year)}

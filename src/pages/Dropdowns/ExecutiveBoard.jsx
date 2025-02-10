@@ -3,7 +3,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import TimeLine from "@/components/TimeLine";
+import TimeLine from "@/components/TimeLine/TimeLine";
 
 const members = [
   {
@@ -53,7 +53,7 @@ const members = [
   },
 ];
 
-const ExecutiveBoard = () => {
+const ExecutiveBoard = ({ showTimeline = true }) => {
   return (
     <div>
       <div className="bg-gray-100 py-16 px-4 md:px-20">
@@ -101,9 +101,7 @@ const ExecutiveBoard = () => {
         </div>
       </div>
 
-      <div>
-        <TimeLine />
-      </div>
+      <div>{showTimeline && <TimeLine />}</div>
     </div>
   );
 };

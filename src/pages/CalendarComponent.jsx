@@ -8,12 +8,20 @@ import "react-toastify/dist/ReactToastify.css";
 
 const CalendarComponent = () => {
   const [events, setEvents] = useState([
+    // {
+    //   id: "1",
+    //   title: "Meeting",
+    //   start: "2025-02-10T10:00:00",
+    //   end: "2025-02-10T11:00:00",
+    //   color: "#3b82f6",
+    // },
     {
-      id: "1",
-      title: "Meeting",
-      start: "2025-02-10T10:00:00",
-      end: "2025-02-10T11:00:00",
-      color: "#3b82f6",
+      id: 1,
+      date: "30 Mar 2024",
+      time: "2:00 pm to 12:00 am",
+      title: "NRN Citizenship Interaction",
+      image: "src/assets/logo/logo.png",
+      status: "Expired",
     },
     {
       id: "2",

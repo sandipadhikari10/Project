@@ -10,6 +10,7 @@ import Advisors from "./pages/Dropdowns/Advisors";
 import GeneralMember from "./pages/Dropdowns/GeneralMember";
 import PastPresident from "./pages/Dropdowns/PastPresident";
 import WestCoast from "./pages/Dropdowns/WestCoast";
+import Events from "./pages/Events";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/home" element={<HomePage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/news" element={<News />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/Executive-Board" element={<ExecutiveBoard />} />
         <Route path="/Advisors" element={<Advisors />} />
         <Route path="/General-Members" element={<GeneralMember />} />
