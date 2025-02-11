@@ -12,7 +12,7 @@ import hari from "../assets/gallery/hari.jpg";
 import CalendarComponent from "./CalendarComponent";
 import ExecutiveBoard from "./Dropdowns/ExecutiveBoard";
 import FAQPage from "@/components/FAQ/FAQPage";
-import { Calendar, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 
 const pastEvents = [
   {
@@ -197,7 +197,7 @@ const HomePage = () => {
         </div>
 
         {/* Right Section for Past Events */}
-        <div className="max-w-xl mt-10  cursor-pointer">
+        <div className="max-w-xl mt-20  cursor-pointer">
           <h2 className="lg:text-4xl text-3xl font-bold font-[vollkorn] text-gray-700 mb-6">
             Past Events
           </h2>

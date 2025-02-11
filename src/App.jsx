@@ -11,7 +11,7 @@ import GeneralMember from "./pages/Dropdowns/GeneralMember";
 import PastPresident from "./pages/Dropdowns/PastPresident";
 import WestCoast from "./pages/Dropdowns/WestCoast";
 import Events from "./pages/Events";
-import Footer2 from "./components/Footer2";
+import Footer2 from "./components/Footer";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
         <Route path="/Past-President" element={<PastPresident />} />
         <Route path="/RCC-West-Coast-Region" element={<WestCoast />} />
       </Routes>
-      <Footer />
+      <Footer2 />
     </>
   );
 }
