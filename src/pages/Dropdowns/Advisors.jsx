@@ -54,7 +54,7 @@ const Advisors = () => {
           {members.map((member, index) => (
             <div
               key={index}
-              className="bg-white px-10 py-20   flex flex-col items-center h-[52vh]  w-[360px]"
+              className="bg-white px-10 py-20   flex flex-col items-center lg:h-[52vh]  w-[360px]"
             >
               {/* Profile Image */}
               <img

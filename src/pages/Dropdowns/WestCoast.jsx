@@ -57,7 +57,7 @@ const WestCoast = () => {
         <div className="md:w-3/4 p-6 flex flex-col mt-10  md:flex-row items-center">
           {/* President Image and Name */}
           {/* <div className="flex flex-col h-[52vh]  w-[400px] items-center w-full border-2 md:w-1/3"> */}
-          <div className="flex flex-col h-[52vh] w-[325px] items-center bg-white p-15  ">
+          <div className="flex flex-col h-[52vh] md:w-[325px] items-center bg-white p-15  ">
             <img
               src={selectedPresident.image}
               alt={selectedPresident.name}

@@ -44,7 +44,7 @@ const members = [
   {
     name: "Prasmita Sharma",
     position: "Youth Cordinator",
-    image: "src/assets/members/Prasmita.jpg",
+    image: "src/assets/members/Sushila.jpg",
   },
   {
     name: "Prasmita Sharma",
@@ -63,11 +63,11 @@ const ExecutiveBoard = ({ showTimeline = true }) => {
         </h1>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-x-2 gap-y-10 justify-items-center ml-26 mr-26">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-3 md:gap-x-2 gap-y-10 justify-items-center ml-26 mr-26">
           {members.map((member, index) => (
             <div
               key={index}
-              className="bg-white px-10 py-20   flex flex-col items-center h-[52vh]  w-[360px]"
+              className="bg-white px-10 py-20   flex flex-col items-center lg:h-[52vh]  w-[360px]"
             >
               {/* Profile Image */}
               <img

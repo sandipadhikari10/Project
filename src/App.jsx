@@ -11,6 +11,7 @@ import GeneralMember from "./pages/Dropdowns/GeneralMember";
 import PastPresident from "./pages/Dropdowns/PastPresident";
 import WestCoast from "./pages/Dropdowns/WestCoast";
 import Events from "./pages/Events";
+import Footer2 from "./components/Footer2";
 
 function App() {
   return (

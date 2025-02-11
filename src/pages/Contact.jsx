@@ -5,13 +5,16 @@ const Contact = () => {
     <div className="bg-gray-100 py-12 px-6 ">
       {/* Contact Info Cards */}
       <div className="max-w-5xl mx-auto  mt-[4.5rem] grid md:grid-cols-3 gap-12">
-        <a href="tel:+1 510-309-7474">
-          <div className="w-xs bg-white px-2 py-14 h-58  rounded shadow-lg text-center">
-            <FaPhoneAlt className="text-blue-600 text-3xl mx-auto mb-4" />
-            <h3 className="text-lg font-semibold">Call Us 24x7</h3>
-            <p className="text-lg font-semibold py-2">+1 510-309-7474</p>
-          </div>
-        </a>
+        {/* <div> */}
+        <div className="bg-white px-6 py-14 h-58 rounded shadow-lg text-center">
+          <a href="tel:+1 510-309-7474">
+            <div className="">
+              <FaPhoneAlt className="text-blue-600 text-3xl mx-auto mb-4" />
+              <h3 className="text-lg font-semibold">Call Us 24x7</h3>
+              <p className="text-lg font-semibold py-2">+1 510-309-7474</p>
+            </div>
+          </a>
+        </div>
 
         <div className="bg-white px-6 py-14 h-58 rounded shadow-lg text-center">
           <a
