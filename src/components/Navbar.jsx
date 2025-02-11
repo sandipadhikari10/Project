@@ -63,7 +63,9 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <img src={logo} alt="NRNACA" className="h-25 w-25" />
             <span className="font-[vollkorn] text-4xl font-bold text-[#0884dc]">
-              NRNA CA
+              <Link className="" to="/home">
+                NRNA CA
+              </Link>
             </span>
           </div>
 
