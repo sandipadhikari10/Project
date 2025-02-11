@@ -29,7 +29,7 @@ function App() {
         <Route path="/Past-President" element={<PastPresident />} />
         <Route path="/RCC-West-Coast-Region" element={<WestCoast />} />
       </Routes>
-      <Footer2 />
+      <Footer />
     </>
   );
 }
